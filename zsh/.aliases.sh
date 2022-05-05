@@ -18,3 +18,6 @@ alias la="ls -o -Ah"
 alias j="jump"
 alias v='nvim'
 alias vim='nvim'
+
+# Tmux
+alias tmuxa="tmux attach -t $1"
