@@ -9,4 +9,6 @@ nmap <leader>gl :Gclog<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>go :diffget<CR>
 
+nnoremap <leader>gr :Gitsigns reset_hunk<CR>
+
 " let g:gitgutter_enabled = 1

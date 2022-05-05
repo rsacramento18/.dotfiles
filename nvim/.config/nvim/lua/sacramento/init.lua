@@ -6,4 +6,5 @@ require("sacramento.nvim-tree")
 require("sacramento.statusline")
 require("sacramento.nvim-lspconfig")
 require("sacramento.telescope")
+require("sacramento.neorg")
 

@@ -24,7 +24,7 @@ nvimTree.setup {
   },
   update_focused_file = {
     enable      = false,
-    update_cwd  = false,
+    update_cwd  = true,
     ignore_list = {}
   },
   system_open = {
@@ -59,3 +59,7 @@ nvimTree.setup {
     require_confirm = true
   }
 }
+
+vim.g.nvim_tree_respect_buf_cwd = 1
+vim.g.nvim_tree_highlight_opened_files = 1
+

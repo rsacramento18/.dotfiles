@@ -5,6 +5,7 @@ nnoremap <C-s> <cmd>Telescope live_grep<CR>
 
 nnoremap <leader>pf :lua require('sacramento.telescope').find_all_projects()<CR>
 nnoremap <leader>ps :lua require('sacramento.telescope').grep_all_projects()<CR>
+nnoremap <leader>dc :lua require('sacramento.telescope').documents()<CR>
 
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
 

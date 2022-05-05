@@ -21,10 +21,10 @@ local is_virtual_text_active = true
 function M.toggle_virtual_text()
   if is_virtual_text_active == true then
     is_virtual_text_active = false
-    vim.lsp.diagnostic.clear(0)
+    vim.diagnostic.hide(0)
   else
     is_virtual_text_active = true
-    vim.lsp.diagnostic.redraw(0)
+    vim.diagnostic.show(0)
   end
 end
 

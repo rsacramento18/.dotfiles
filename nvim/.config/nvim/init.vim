@@ -31,6 +31,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'nvim-telescope/telescope-project.nvim'
+Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 " Git plugins 
 Plug 'tpope/vim-fugitive'
@@ -38,11 +39,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
 
 " Colorschemes
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'sainnhe/gruvbox-material'
-Plug 'bluz71/vim-moonfly-colors'
-Plug 'ayu-theme/ayu-vim'
 Plug 'ellisonleao/gruvbox.nvim'
+Plug 'tjdevries/colorbuddy.vim'
+Plug 'tjdevries/gruvbuddy.nvim'
+Plug 'tomasiser/vim-code-dark'
 
 " Misc
 Plug 'mbbill/undotree'
@@ -52,10 +52,12 @@ Plug 'mattn/emmet-vim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'ygm2/rooter.nvim'
+Plug 'nvim-neorg/neorg'
+
 
 " Debuug
 Plug 'mfussenegger/nvim-dap'
-Plug 'Pocco81/DAPInstall.nvim'
 Plug 'szw/vim-maximizer'
 
 " Snippets
@@ -69,7 +71,7 @@ call plug#end()
 
 
 lua require("sacramento")
-lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true}, incremental_selection = { enable = true }, textobjects = { enable = true }}
+lua require'nvim-treesitter.configs'.setup { ensure_installed = { "norg", "norg_table", "haskell", "cpp", "c", "javascript", "markdown" }, indent = { enable = true }, highlight = { enable = true}, incremental_selection = { enable = true }, textobjects = { enable = true }}
 
 if executable('rg')
   let g:rg_derive_root='true'
@@ -77,6 +79,7 @@ endif
 
 let loaded_matchparen = 1
 let mapleader = " "
+let maplocalleader = " "
 
 nnoremap <silent> Q <nop>
 
@@ -128,6 +131,6 @@ vnoremap <leader>d "_d
 nnoremap <leader>t :terminal<CR>
 tnoremap <Esc> <C-\><C-n>
 
+inoremap <M-#> #
+
 let g:Hexokinase_highlighters = ['backgroundfull']
-
-

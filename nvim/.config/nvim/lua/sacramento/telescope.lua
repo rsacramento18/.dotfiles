@@ -4,6 +4,7 @@ local previewers = require("telescope.previewers")
 local action_state = require("telescope.actions.state")
 local conf = require("telescope.config").values
 local actions = require("telescope.actions")
+local fb_actions = require("telescope").extensions.file_browser.actions
 
 
 require("telescope").setup({
@@ -33,12 +34,23 @@ require("telescope").setup({
         '/Users/work/work',
       },
       hidden_files = true -- default: false
+    },
+    file_browser = {
+      base_dirs = {
+        '/Users/Documents',
+      },
+      mappings = {
+        ["i"] = {
+          -- remap to going to home directory
+          ["<C-e>"] = fb_actions.create,
+        },
+      }
     }
-  },
+  }
 })
 require('telescope').load_extension("project")
 require("telescope").load_extension("fzy_native")
-
+require("telescope").load_extension("file_browser")
 
 local M = {}
 M.search_dotfiles = function()
@@ -70,8 +82,16 @@ M.git_branches = function()
     attach_mappings = function(_, map)
       map("i", "<c-d>", actions.git_delete_branch)
       map("n", "<c-d>", actions.git_delete_branch)
+      map("i", "<c-e>", actions.git_create_branch)
+      map("n", "<c-e>", actions.git_create_branch)
       return true
     end,
+  })
+end
+
+M.documents = function()
+  require("telescope").extensions.file_browser.file_browser({
+    cwd = "/Users/work/Documents",
   })
 end
 

@@ -5,6 +5,7 @@ for folder in $(echo $STOW_FODLERS | sed "s/,/ /g")
 do
   stow -D $folder
   stow $folder
+  echo $folder
 done
 popd
 
