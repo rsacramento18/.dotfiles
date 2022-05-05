@@ -31,13 +31,13 @@ require("telescope").setup({
     },
     project = {
       base_dirs = {
-        '/Users/work/work',
+        '~/Projects',
       },
       hidden_files = true -- default: false
     },
     file_browser = {
       base_dirs = {
-        '/Users/Documents',
+        '~/Documents',
       },
       mappings = {
         ["i"] = {
@@ -56,7 +56,7 @@ local M = {}
 M.search_dotfiles = function()
   require("telescope.builtin").find_files({
     prompt_title = "< Int.vim >",
-    cwd = "/Users/work/.config/nvim",
+    cwd = "~/.dotfiles",
     hidden = true,
   })
 end
@@ -64,7 +64,7 @@ end
 M.find_all_projects = function()
   require("telescope.builtin").find_files({
     prompt_title = "Find all projects",
-    cwd = "/Users/work/work",
+    cwd = "~/Projects",
     hidden = true,
   })
 end
@@ -72,7 +72,7 @@ end
 M.grep_all_projects = function()
   require("telescope.builtin").live_grep({
     prompt_title = "Grep all projects",
-    cwd = "/Users/work/work",
+    cwd = "~/Projects",
     hidden = true,
   })
 end
@@ -91,7 +91,7 @@ end
 
 M.documents = function()
   require("telescope").extensions.file_browser.file_browser({
-    cwd = "/Users/work/Documents",
+    cwd = "~/Documents",
   })
 end
 
