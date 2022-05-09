@@ -6,7 +6,6 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jump
-# antigen theme robbyrussell
 antigen theme cypher
 
 antigen apply
