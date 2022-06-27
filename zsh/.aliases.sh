@@ -15,6 +15,8 @@ alias gcp="git cherry-pick $1"
 # Files
 alias l="ls -o"
 alias la="ls -o -AhX --group-directories-first"
+# For Mac
+# alias la="ls -o -Ah"
 alias j="jump"
 alias v='nvim'
 alias vim='nvim'

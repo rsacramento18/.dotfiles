@@ -1,5 +1,5 @@
 lua require('sacramento')
-nnoremap <silent> <leader>pj :Telescope project<CR>
+nnoremap <silent> <leader>pj :Telescope projects<CR>
 nnoremap <C-f> <cmd>Telescope find_files<CR>
 nnoremap <C-s> <cmd>Telescope live_grep<CR>
 

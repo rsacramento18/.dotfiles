@@ -23,6 +23,7 @@ set encoding=UTF-8
 set clipboard=unnamedplus
 set scrolloff=8
 set cursorline
+set laststatus=3
 
 " Give more space for displaying messages
 set cmdheight=2

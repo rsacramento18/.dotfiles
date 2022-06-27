@@ -29,12 +29,6 @@ require("telescope").setup({
       override_generic_sorter = false,
       override_file_sorter = true,
     },
-    project = {
-      base_dirs = {
-        '~/Projects',
-      },
-      hidden_files = true -- default: false
-    },
     file_browser = {
       base_dirs = {
         '~/Documents',
@@ -48,7 +42,7 @@ require("telescope").setup({
     }
   }
 })
-require('telescope').load_extension("project")
+require('telescope').load_extension('projects')
 require("telescope").load_extension("fzy_native")
 require("telescope").load_extension("file_browser")
 

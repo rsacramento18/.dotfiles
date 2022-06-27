@@ -30,7 +30,8 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
-Plug 'nvim-telescope/telescope-project.nvim'
+" Plug 'nvim-telescope/telescope-project.nvim'
+Plug 'ahmedkhalf/project.nvim'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 " Git plugins 
@@ -52,7 +53,7 @@ Plug 'mattn/emmet-vim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'ygm2/rooter.nvim'
+" Plug 'ygm2/rooter.nvim'
 Plug 'nvim-neorg/neorg'
 
 
