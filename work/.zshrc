@@ -1,5 +1,6 @@
 source ~/.aliases.sh
 source ~/.antigen/antigen.zsh
+source ~/.secrets.sh
 
 antigen use oh-my-zsh
 
@@ -9,6 +10,8 @@ antigen bundle jump
 antigen theme cypher
 
 antigen apply
+
+eval "$(starship init zsh)"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 

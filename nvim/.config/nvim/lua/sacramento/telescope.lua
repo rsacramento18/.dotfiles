@@ -58,7 +58,7 @@ end
 M.find_all_projects = function()
   require("telescope.builtin").find_files({
     prompt_title = "Find all projects",
-    cwd = "~/Projects",
+    cwd = "~/work",
     hidden = true,
   })
 end
@@ -66,7 +66,7 @@ end
 M.grep_all_projects = function()
   require("telescope.builtin").live_grep({
     prompt_title = "Grep all projects",
-    cwd = "~/Projects",
+    cwd = "~/work",
     hidden = true,
   })
 end
@@ -85,7 +85,7 @@ end
 
 M.documents = function()
   require("telescope").extensions.file_browser.file_browser({
-    cwd = "~/Documents",
+    cwd = "~/work/documents",
   })
 end
 

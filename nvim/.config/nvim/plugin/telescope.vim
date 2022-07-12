@@ -1,7 +1,7 @@
 lua require('sacramento')
 nnoremap <silent> <leader>pj :Telescope projects<CR>
-nnoremap <C-f> <cmd>Telescope find_files<CR>
-nnoremap <C-s> <cmd>Telescope live_grep<CR>
+nnoremap <C-f> <cmd>Telescope find_files hidden=true<CR>
+nnoremap <C-s> <cmd>Telescope live_grep hidden=true<CR>
 
 nnoremap <leader>pf :lua require('sacramento.telescope').find_all_projects()<CR>
 nnoremap <leader>ps :lua require('sacramento.telescope').grep_all_projects()<CR>
