@@ -1,11 +1,7 @@
-require("sacramento.blankline")
-require("sacramento.dap")
-require("sacramento.gitsigns")
-require("sacramento.lsp-cmp")
-require("sacramento.nvim-tree")
-require("sacramento.project")
-require("sacramento.statusline")
-require("sacramento.nvim-lspconfig")
-require("sacramento.telescope")
-require("sacramento.neorg")
+require("sacramento.set")
+require("sacramento.packer")
+require("sacramento.neogit")
 
+vim.g.netrw_browse_split = 0
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 25

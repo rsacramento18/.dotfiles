@@ -15,6 +15,7 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
+set nofoldenable
 set incsearch
 set so=20
 set noshowmode

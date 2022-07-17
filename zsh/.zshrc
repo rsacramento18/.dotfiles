@@ -6,9 +6,11 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jump
-antigen theme cypher
+# antigen theme cypher
 
 antigen apply
+
+eval "$(starship init zsh)"
 
 export DISPLAY=:0
 export EDITOR=nvim
