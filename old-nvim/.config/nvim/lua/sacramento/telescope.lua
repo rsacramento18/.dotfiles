@@ -1,22 +1,16 @@
-if not pcall(require, "telescope") then
-    return
-end
-
 local pickers = require("telescope.pickers")
 local finders = require("telescope.finders")
 local previewers = require("telescope.previewers")
 local action_state = require("telescope.actions.state")
 local conf = require("telescope.config").values
 local actions = require("telescope.actions")
+local fb_actions = require("telescope").extensions.file_browser.actions
+
 
 require("telescope").setup({
   defaults = {
-    prompt_prefix = " > ",
-    selection_caret = " > ",
-    entry_prefix = "  ",
-    multi_icon = "<>",
-
     file_sorter = require("telescope.sorters").get_fzy_sorter,
+    prompt_prefix = " > ",
     color_devicons = true,
 
     file_previewer = require("telescope.previewers").vim_buffer_cat.new,
@@ -30,9 +24,27 @@ require("telescope").setup({
       },
     },
   },
+  extensions = {
+    fzy_native = {
+      override_generic_sorter = false,
+      override_file_sorter = true,
+    },
+    file_browser = {
+      base_dirs = {
+        '~/Documents',
+      },
+      mappings = {
+        ["i"] = {
+          -- remap to going to home directory
+          ["<C-e>"] = fb_actions.create,
+        },
+      }
+    }
+  }
 })
-
-local _ = pcall(require, "nvim-nonicons")
+require('telescope').load_extension('projects')
+require("telescope").load_extension("fzy_native")
+require("telescope").load_extension("file_browser")
 
 local M = {}
 M.search_dotfiles = function()

@@ -12,10 +12,15 @@ alias glo="git log --oneline"
 alias grhh="git reset --hard HEAD"
 alias gcp="git cherry-pick $1"
 
+# Directories
+alias home="cd ~"
+alias work="cd work"
+alias personal="cd personal"
+
 
 # Files
 alias l="ls -o -h"
-alias la="ls -o -Ah"
+alias la="ls -o -AhX --group-directories-first"
 alias j="jump"
 alias v='nvim'
 alias vim='nvim'
