@@ -14,5 +14,6 @@ export DISPLAY=:0
 export EDITOR=nvim
 PATH="$HOME/.local/bin:$PATH"
 export npm_config_prefix="$HOME/.local"
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'

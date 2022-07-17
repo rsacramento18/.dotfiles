@@ -23,3 +23,6 @@ alias vim='nvim'
 
 # Tmux
 alias tmuxa="tmux attach -t $1"
+
+#DB
+alias db="psql -h localhost -p 5432 -U rsacramento -d finances"
