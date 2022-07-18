@@ -14,8 +14,9 @@ alias gcp="git cherry-pick $1"
 
 # Directories
 alias home="cd ~"
-alias work="cd work"
-alias personal="cd personal"
+alias work="cd ~/work"
+alias personal="cd ~/personal"
+
 
 
 # Files

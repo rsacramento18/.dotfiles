@@ -35,4 +35,4 @@ export npm_config_prefix="$HOME/.npm_packages"
 
 bindkey -s ^f "tmux-sessionizer\n"
 
-neofetch
+pfetch
