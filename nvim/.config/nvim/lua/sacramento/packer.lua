@@ -1,5 +1,6 @@
 return require("packer").startup(function()
     use("wbthomason/packer.nvim")
+
     use("sbdchd/neoformat")
 
     -- Git
@@ -35,8 +36,6 @@ return require("packer").startup(function()
 
     -- Colorschemes
     use("tjdevries/express_line.nvim")
-    use("tjdevries/colorbuddy.nvim")
-    use("tjdevries/gruvbuddy.nvim")
     use("ellisonleao/gruvbox.nvim")
 
     -- Misc
@@ -44,7 +43,7 @@ return require("packer").startup(function()
     use("mbbill/undotree")
     use("mg979/vim-visual-multi")
     use("tpope/vim-commentary")
-    use("lukas-reineke/indent-blankline.nvim")
+    use("glepnir/indent-guides.nvim")
     use("nvim-neorg/neorg")
 
     -- Debug
