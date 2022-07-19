@@ -24,14 +24,10 @@ export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
 export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
 
 
-NPM_PACKAGES="${HOME}/.npm_packages"
+NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
-export PATH="$PATH:/usr/local/go/bin"
-export PATH="$PATH:/Users/work/.config/go/bin"
-export PATH="$PATH:/Users/work/Library/Python/3.8/bin"
-export PATH="$PATH:$HOME/.local/bin"
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
-export npm_config_prefix="$HOME/.npm_packages"
 
 bindkey -s ^f "tmux-sessionizer\n"
 

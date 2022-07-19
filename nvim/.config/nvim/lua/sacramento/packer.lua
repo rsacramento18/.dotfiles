@@ -20,31 +20,30 @@ return require("packer").startup(function()
   use("nvim-telescope/telescope.nvim")
 
   -- Lsp
-  --use("neovim/nvim-lspconfig")
-  --use("hrsh7th/cmp-nvim-lsp")
-  --use("hrsh7th/cmp-buffer")
-  --use("hrsh7th/nvim-cmp")
-  --use("onsails/lspkind-nvim")
-  --use("ray-x/lsp_signature.nvim")
-  --use("tjdevries/lsp_extensions.nvim")
+  use("neovim/nvim-lspconfig")
+  use("hrsh7th/cmp-nvim-lsp")
+  use("hrsh7th/cmp-buffer")
+  use("hrsh7th/nvim-cmp")
+  use("onsails/lspkind-nvim")
+  use("ray-x/lsp_signature.nvim")
+  use("tjdevries/lsp_extensions.nvim")
 
-  --use {
-  --  "folke/lsp-trouble.nvim",
-  --  cmd = "Trouble",
-  --  config = function()
-  --    -- Can use P to toggle auto movement
-  --    require("trouble").setup {
-  --      auto_preview = false,
-  --      auto_fold = true,
-  --    }
-  --  end,
-  -- }
+  use {
+    "folke/lsp-trouble.nvim",
+    cmd = "Trouble",
+    config = function()
+      -- Can use P to toggle auto movement
+      require("trouble").setup {
+        auto_preview = false,
+        auto_fold = true,
+      }
+    end,
+   }
 
   -- Colorschemes
   use("tjdevries/express_line.nvim")
-  use("gruvbox-community/gruvbox")
-  -- use("tjdevries/colorbuddy.vim")
-  -- use("tjdevries/gruvbuddy.nvim")
+  use("tjdevries/colorbuddy.vim")
+  use("tjdevries/gruvbuddy.nvim")
 
   -- Misc
   use("norcalli/nvim-colorizer.lua")
