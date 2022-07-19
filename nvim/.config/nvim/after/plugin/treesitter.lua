@@ -1,9 +1,18 @@
-require'nvim-treesitter.configs'.setup {
-    ensure_installed = "all",
-    sync_install = false,
+if not pcall(require, "nvim-treesitter") then
+  return
+end
 
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-    },
+require("nvim-treesitter.configs").setup { 
+  ensure_installed = { 
+    "c",
+    "javascript",
+    "typescript",
+    "json",
+    "lua",
+  },
+  sync_install = true,
+  indent = { enable = true },
+  highlight = { enable = true},
+  incremental_selection = { enable = true },
+  textobjects = { enable = true }
 }

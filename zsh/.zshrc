@@ -20,4 +20,4 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
-pftech
+pfetch
