@@ -9,6 +9,8 @@ local nmap = Remap.nmap
 nnoremap("<leader>pv", ":Ex<CR>")
 -- nnoremap("<leader>u", ":undotreeShow<CR>")
 
+nnoremap("<PageUp>", "<C-^>")
+
 vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
 

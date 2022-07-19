@@ -13,6 +13,7 @@ alias grhh="git reset --hard HEAD"
 alias gcp="git cherry-pick $1"
 
 # Directories
+alias dot="cd ~/.dotfiles"
 alias home="cd ~"
 alias work="cd ~/work"
 alias personal="cd ~/personal"
