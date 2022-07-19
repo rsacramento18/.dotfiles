@@ -36,6 +36,7 @@
 --   highlight ColorColumn ctermbg=0 guibg=grey
 --   hi CursorLineNR guibg=None
 -- ]]
+--
 
 vim.opt.background = "dark"
 
