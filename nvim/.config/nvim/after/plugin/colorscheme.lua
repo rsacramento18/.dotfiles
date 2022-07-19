@@ -2,7 +2,7 @@ if not pcall(require, "colorbuddy") then
   return
 end
 
-require("colorbuddy").colorscheme "gruvbuddy"
+require("colorbuddy").colorscheme("gruvbuddy")
 require("colorizer").setup()
 
 local c = require("colorbuddy.color").colors
@@ -31,9 +31,8 @@ Group.new("WinSeparator", nil, nil)
 
 Group.new("TSTitle", c.blue)
 
-
-vim.cmd [[
+vim.cmd[[
   hi SignColumn guibg=none
   highlight ColorColumn ctermbg=0 guibg=grey
-  hi 'CursorLineNR guibg=None
+  hi CursorLineNR guibg=None
 ]]
